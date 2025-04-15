@@ -6,26 +6,234 @@
     box-sizing: border-box;
 }
 
-/*ESTILOS PAGE INICIO*/
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  #main {
+    flex: 1;
+  }
 
-h1 {
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* === Layout General === */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  h1, h2, h3 {
+    color: #222;
+    margin-bottom: 1rem;
+  }
+  
+  /* === HEADER === */
+  #header {
+    background-color: #222;
+    padding: 1rem 0;
+  }
+  
+  #nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  #nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.2s ease;
+  }
+  
+  #nav a:hover {
+    color: #aaa;
+  }
+  
+  /* === MAIN === */
+  main {
+    padding: 2rem 1rem;
+  }
+  
+  /* === Footer === */
+
+  #footer {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+.footerUbicacion img {
+  width: 80px;
+  height: auto;
+}
+  
+  .footerMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+  }
+  
+  .footerNav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .footerNav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  .footerNav ul li a:hover {
+    color: #007bff;
+  }
+  
+  .footerLinks {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  .footerLinks p {
+    margin: 5px 0;
+  }
+  
+  .footerLinks a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .footerLinks a:hover {
+    color: #007bff;
+  }
+  
+  .footerRedes {
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+  }
+  
+  .footerRedes a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .footerRedes a:hover {
+    color: #007bff;
+  }
+  
+  /* === Sección productos === */
+  .producto-card {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
-    font-size: 30px;
-    color: rgb(0, 9, 139);
-}
-
-h2 {
-    text-align: center;
-    font-size: 25px;
-    color: rgb(0, 9, 139);
-}
-
-h3 {
-    text-align: center;
-    font-size: 25px;
-    color: rgb(0, 9, 139);
-}
-
-img {
-    width: 200px;
-}
+  }
+  
+  .producto-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  
+  /* === Formularios (servicios/contacto) === */
+  form {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  form .form-label {
+    font-weight: bold;
+  }
+  
+  form .form-control {
+    margin-bottom: 1rem;
+  }
+  
+  form button {
+    background-color: #222;
+    color: white;
+    border: none;
+    padding: 0.5rem 1.25rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #444;
+  }
+  
+  /* === Redes sociales === */
+  .redes-sociales a {
+    text-decoration: none;
+    color: #222;
+    font-weight: 500;
+    margin: 0 0.5rem;
+  }
+  
+  .redes-sociales a:hover {
+    text-decoration: underline;
+  }
+  
+  /* === Horarios === */
+  .horarios {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* === Sección principal inicio === */
+  .seccion1 {
+    padding: 1rem;
+    background-color: #e9ecef;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+  }
+  
+  .image-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    width: 300px;
+  }
